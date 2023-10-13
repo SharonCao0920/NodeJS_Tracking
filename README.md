@@ -13,6 +13,8 @@
 
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/f71c2a82-a9ac-45cf-8944-b9169198a72b)
 
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/c4cefe9a-9383-4e0e-89fd-5437e198a598)
+
 
 ### 2. Environmental Variables
 Save Tracking API keys in this folder. API I used for this project is from: 
