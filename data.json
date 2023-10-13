@@ -21,10 +21,23 @@
         "destination_country": "US"
     },
     {
+        "tracking_number": "1Z12345E020527079",
+        "tracking_provider": "ups",
+        "order_id": "21",
+        "postal_code": "95123",
+        "destination_country": "US"
+    },
+    {
         "tracking_number": "9212490276905104629392",
         "tracking_provider": "usps",
         "order_id": "24",
         "postal_code": "90045",
         "destination_country": ""
+    },
+    {
+        "tracking_number": "92001901755477300068566087",
+        "tracking_provider": "usps",
+        "order_id": "69",
+        "destination_country": null
     }
 ]
