@@ -86,14 +86,17 @@ https://my.trackship.com/api/create-tracker/customapp/
 Testing the project using Postman.
 
 * **Create a Tracking:**
+  
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/809d5071-3d42-47a1-aba6-20bd10650259)
 
 
 * **Data Saved:**
+  
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/286a6fe8-6a29-4069-9212-a3e06012ce84)
 
 
 * **Get Shipment Status:**
+  
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/20e99220-f921-4cf2-8f3b-a5db7e50f61b)
 
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/05be01b8-18d3-4e08-b0fe-61dfe5ab2bef)
