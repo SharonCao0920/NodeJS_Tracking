@@ -10,23 +10,36 @@
   ```
 
 * Create .env file to store variables
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/f71c2a82-a9ac-45cf-8944-b9169198a72b)
 
 
 ### 2. Environmental Variables
 Save Tracking API keys in this folder. API I used for this project is from: 
 [TrackShip](https://docs.trackship.com/docs/tracking-api/)
 
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/b83fb998-53c0-4802-b36f-9ff7eff3a92b)
+
+
 ### 3. Create a Tracker
 
 API used in this section is **[Create a Tracking](https://docs.trackship.com/docs/tracking-api/create-shipment/)**
 
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/5e00c833-309d-424f-9dfa-128adb751955)
+
 In this section, we post the information through the API to create a tracker.
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/568e8b06-3083-4b0f-913c-7a093d317526)
+
 <br>
 
 **Request Parameters:**
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/1a0be285-c8bc-4c1f-8780-6513e7b16e08)
 
 
 **Response Body:**
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/d9e70520-7d2c-4177-906e-c8d51db09a7b)
+
+**Response Parameters:**
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/11e5615f-a79b-464e-abc4-64b01999b603)
 
 
 API URL:
@@ -36,6 +49,8 @@ https://my.trackship.com/api/create-tracker/customapp/
 
 ### 4. Save Data
 With the data posted in previous section, create a method to save the data to data.json file which removes duplicate data and save data set in order of order_id.
+
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/d84cead4-10cc-4616-8b14-58480240afc1)
 
 
 ### 5. Get Tracking Details
@@ -49,9 +64,14 @@ In this section, the program will do:
 <br>
 
 **Request Parameters:**
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/9f8ce0b4-5485-4391-ac07-8216e75343a1)
 
 
 **Response Body:**
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/6e190a26-6590-4000-b062-a468a64c6967)
+
+**Response Parameters:**
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/910b9642-f9b8-4512-b91d-ec2e4ed89124)
 
 
 API URL:
@@ -63,11 +83,16 @@ https://my.trackship.com/api/create-tracker/customapp/
 Testing the project using Postman.
 
 * **Create a Tracking:**
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/809d5071-3d42-47a1-aba6-20bd10650259)
 
 
 * **Data Saved:**
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/286a6fe8-6a29-4069-9212-a3e06012ce84)
 
 
 * **Get Shipment Status:**
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/20e99220-f921-4cf2-8f3b-a5db7e50f61b)
+
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/05be01b8-18d3-4e08-b0fe-61dfe5ab2bef)
 
 
