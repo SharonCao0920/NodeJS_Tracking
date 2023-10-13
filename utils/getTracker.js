@@ -1,4 +1,6 @@
 import axios from 'axios';
+import { getLoggerInstance } from "../logger.js";   
+const loggers = getLoggerInstance();
 
 export const createTracking = async (data) => {
     const API_KEY = process.env.TRACKSHIP_API_KEY;
@@ -15,7 +17,7 @@ export const createTracking = async (data) => {
         });
         return response.data;
     } catch (error) {
-        console.log(error);
+        loggers.error(`Error creating tracking: ${error}`);
         throw error;
     }
 };

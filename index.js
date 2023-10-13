@@ -4,6 +4,7 @@ import { getTracker } from './routers/getTracking.js';
 import { getDetails } from './routers/getDetails.js';
 import https from 'https';
 import fs from 'fs';
+import { getLoggerInstance } from './logger.js';    
 
 // Load environment variables
 dotenv.config();
@@ -15,6 +16,7 @@ const httpsOptions = {
 }
 
 const app = express();
+const loggers = getLoggerInstance();
 const server = https.createServer(httpsOptions,app);
 
 // Middleware
@@ -25,5 +27,5 @@ app.use('/api', getTracker);
 app.use('/api', getDetails);
 
 server.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+    loggers.info(`Server is running on port ${PORT}`);
 });

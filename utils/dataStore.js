@@ -1,4 +1,6 @@
 import fs from 'fs';
+import { getLoggerInstance } from "../logger.js";   
+const loggers = getLoggerInstance();
 
 const filePath = './data.json';
 
@@ -17,9 +19,9 @@ const saveToFile = (data) => {
 
     fs.writeFile(filePath, JSON.stringify(data, null, 4), (err) => {
         if (err) {
-            console.error('Error saving to file:', err);
+            loggers.error(`Error saving to file: ${err}`);
         } else {
-            console.log('Data saved to data.json');
+            loggers.info(`Data saved to data.json`);
         }
     });
 };
@@ -31,5 +33,5 @@ export const appendTrackingData = (data) => {
         currentData.push(data);
         saveToFile(currentData);
     }
-    console.log(currentData);
+    loggers.info(`Tracking data appended to data.json ${currentData}`);
 };

@@ -1,5 +1,7 @@
 import fs from 'fs';
 import fetch from 'node-fetch';
+import { getLoggerInstance } from "../logger.js";   
+const loggers = getLoggerInstance();
 
 const filePath = 'data.json'; 
 const API_URL = 'https://my.trackship.com/api/shipment/get/';
@@ -8,7 +10,7 @@ const APP_NAME = process.env.APP_NAME;
 
 const loadDataFromFile = () => {
     if (fs.existsSync(filePath)) {
-        console.log('File exists');
+        loggers.info(`File exists`);
         const rawData = fs.readFileSync(filePath, 'utf8');
         if (!rawData.trim()) {
             return [];
@@ -17,11 +19,11 @@ const loadDataFromFile = () => {
         try {
             return JSON.parse(rawData);
         } catch (error) {
-            console.error('Error parsing JSON from data.json:', error);
+            loggers.error(`Error parsing JSON from data.json: ${error}`);
             return [];
         }
     } else {
-        console.error('File does not exist');   
+        loggers.error(`File does not exist`); 
         return [];
     }
 };
@@ -31,7 +33,7 @@ const getShipmentStatus = async (orderId) => {
     const orderData = data.find(item => item.order_id === orderId);
 
     if (!orderData) {
-        console.error('Order not found!');
+        loggers.error(`Order not found!`);
         return null;
     }
 
@@ -55,7 +57,7 @@ const getShipmentStatus = async (orderId) => {
         return result;
 
     } catch (error) {
-        console.error('Error fetching shipment status:', error);
+        loggers.error(`Error fetching shipment status: ${error}`);
         return null;
     }
 };

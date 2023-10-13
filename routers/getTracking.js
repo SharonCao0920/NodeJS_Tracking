@@ -1,6 +1,8 @@
 import express from 'express';
 import { createTracking } from '../utils/getTracker.js';
 import { appendTrackingData } from '../utils/dataStore.js';
+import { getLoggerInstance } from "../logger.js";   
+const loggers = getLoggerInstance();
 
 export const getTracker = express.Router();
 
@@ -17,12 +19,13 @@ getTracker.post('/create-tracker', async (req, res) => {
         });
 
         const inputData = { tracking_number, tracking_provider, order_id, postal_code, destination_country };
-        appendTrackingData(inputData); // Append the data if it doesn't already exist
+        appendTrackingData(inputData); 
+        loggers.info(`Tracking data appended to trackingData.json`);
 
-        console.log(trackingData);
+        loggers.info(`Tracking data: ${trackingData}`);
         res.json(trackingData);
     } catch (error) {
-        console.log(error);
+        loggers.error(`Failed to create tracking: ${error}`);
         return res.status(500).json({ error: 'Failed to create tracking' });
     }
 });
