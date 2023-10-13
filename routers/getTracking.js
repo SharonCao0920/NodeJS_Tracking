@@ -1,15 +1,11 @@
 import express from 'express';
-import { createTracking } from '../components/getTracker.js';
-import { appendTrackingData } from '../Data/dataStore.js';
+import { createTracking } from '../utils/getTracker.js';
+import { appendTrackingData } from '../utils/dataStore.js';
 
 export const getTracker = express.Router();
 
 getTracker.post('/create-tracker', async (req, res) => {
     const { tracking_number, tracking_provider, order_id, postal_code, destination_country } = req.body;
-
-    if (!tracking_number || !tracking_provider || !order_id) {
-        return res.status(400).json({ error: 'Tracking number, tracking provider, and order ID are required' });
-    }
 
     try {
         const trackingData = await createTracking({
