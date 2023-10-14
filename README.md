@@ -10,7 +10,7 @@
   ```
   * Install needed packages
   ```
-  $ npm install express axios winson luxon dotenv 
+  $ npm install express axios winson luxon dotenv node-fetch
   ```
 
 * Create .env file to store variables
