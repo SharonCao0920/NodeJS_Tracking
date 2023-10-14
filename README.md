@@ -8,6 +8,10 @@
   ```
   $ npm init -y
   ```
+  * Install needed packages
+  ```
+  $ npm install express axios winson luxon dotenv 
+  ```
 
 * Create .env file to store variables
 
