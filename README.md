@@ -85,6 +85,20 @@ API URL:
 
 https://my.trackship.com/api/create-tracker/customapp/
 
+## Run Project
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/f6c9208c-b2cf-4a3d-9479-562870e0ce80)
+
+```
+$ npm start
+```
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/f71d65e3-63c3-4d59-a8fc-55c8fd0fe050)
+
+
+```
+// On another terminal
+$ ngrok http https://localhost:8080
+```
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/5b05e80d-99de-4fb6-9ce8-3a094e718330)
 
 ## Test Results
 Testing the project using Postman.
