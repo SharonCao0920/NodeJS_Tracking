@@ -103,7 +103,10 @@ Testing the project using Postman.
   
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/20e99220-f921-4cf2-8f3b-a5db7e50f61b)
 
-![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/05be01b8-18d3-4e08-b0fe-61dfe5ab2bef)
+### logger
 
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/f54c0a70-05cb-40e1-9443-bec309dd4665)
+
+### Trackship Preview
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/8a5d01dd-93ca-4957-a25f-f32851510a19)
 
