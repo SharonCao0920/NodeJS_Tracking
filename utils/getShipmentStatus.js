@@ -6,7 +6,7 @@ const loggers = getLoggerInstance();
 const filePath = 'data.json'; 
 const API_URL = 'https://my.trackship.com/api/shipment/get/';
 const API_KEY = process.env.API_KEY; // Using environment variables for security
-const APP_NAME = process.env.APP_NAME;
+const APP_NAME = process.env.APP_NAME_SHIPMENT;
 
 const loadDataFromFile = () => {
     if (fs.existsSync(filePath)) {
@@ -38,6 +38,8 @@ const getShipmentStatus = async (orderId) => {
     }
 
     const { tracking_number, tracking_provider } = orderData;
+    loggers.info(`tracking_number: ${tracking_number}`);
+    loggers.info(`tracking_provider: ${tracking_provider}`);
 
     try {
         const response = await fetch(API_URL, {
@@ -45,7 +47,6 @@ const getShipmentStatus = async (orderId) => {
             headers: {
                 'trackship-api-key': API_KEY,
                 'app-name': APP_NAME,
-                'Content-Type': 'application/json'
             },
             body: JSON.stringify({
                 tracking_number,
