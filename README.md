@@ -105,4 +105,5 @@ Testing the project using Postman.
 
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/05be01b8-18d3-4e08-b0fe-61dfe5ab2bef)
 
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/8a5d01dd-93ca-4957-a25f-f32851510a19)
 
