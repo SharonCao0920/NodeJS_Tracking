@@ -45,7 +45,9 @@ API used in this section is **[Create a Tracking](https://docs.trackship.com/doc
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/32412289-7b96-42c0-8b03-bad33ce5f487)
 
 * **Test Webhook**
+
 *Note: it seems that Webhook is not required but need to connect to store since APP_NAME is required in header.*
+
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/568e8b06-3083-4b0f-913c-7a093d317526)
 
 In this section, we post the data through the API to create a tracker information.
