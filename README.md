@@ -32,11 +32,11 @@ Save Tracking API keys in this folder. API I used for this project is from:
 API used in this section is **[Create a Tracking](https://docs.trackship.com/docs/tracking-api/create-shipment/)**
 
 * **Connect to a store**
-  
-![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/5e00c833-309d-424f-9dfa-128adb751955)
+
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/32412289-7b96-42c0-8b03-bad33ce5f487)
 
 * **Test Webhook**
-  
+*Note: it seems that Webhook is not required but need to connect to store since APP_NAME is required in header.*
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/568e8b06-3083-4b0f-913c-7a093d317526)
 
 In this section, we post the data through the API to create a tracker information.
@@ -94,6 +94,7 @@ With the data posted in previous section, create a method to save the data to da
 
 or
 
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/5f780f3a-6b94-4cf7-97cd-260a6979da8d)
 
 
 * **Response Parameters:**
@@ -101,14 +102,20 @@ or
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/910b9642-f9b8-4512-b91d-ec2e4ed89124)
 
 
-API URL:
+* **API URL:**
 
-https://my.trackship.com/api/create-tracker/customapp/
+[https://my.trackship.com/api/create-tracker/customapp/]{https://my.trackship.com/api/create-tracker/customapp/}
 
 ### TrackingMore API
 * **Request**
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/e5033d75-4c39-4a70-9167-8dec13540ef0)
+
+ 
 * **Example**
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/62556c2e-5b06-4352-8558-bee230804adf)
+
 * **Response**
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/89ea2623-d04d-4177-8c82-a2c408ac1fc2)
 
 ## Run Project
 * **package.json**
@@ -143,23 +150,25 @@ Testing the project using Postman.
 * **Get Shipment Status:**
 
   * TrackShip API
-  
-![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/20e99220-f921-4cf2-8f3b-a5db7e50f61b)
 
-
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/a4489961-591d-4ddf-b04a-c042d31cad06)
 
   * TackingMore API
-
-
+ 
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/4edcdf47-9d9c-4547-8414-6bb2254d2c0a)
 
 ### logger
 
 * TrackShip API
 
-![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/f54c0a70-05cb-40e1-9443-bec309dd4665)
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/9caf368b-e56b-482a-a731-30c178f3aad5)
 
 * TackingMore API
 
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/8b9a388b-c5dd-4cb4-ac49-a9f73562b40a)
+
+
 ### Trackship Preview
-![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/8a5d01dd-93ca-4957-a25f-f32851510a19)
+
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/1e86590b-1748-41e6-9254-5a9746f57a7e)
 
