@@ -1,6 +1,17 @@
 # NodeJS_Tracking
 
 ## Design
+
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/c4cefe9a-9383-4e0e-89fd-5437e198a598)
+
+**APIs used:**
+1. **[Create a Tracking](https://docs.trackship.com/docs/tracking-api/create-shipment/)**
+2. [Get a shipment status](https://docs.trackship.com/docs/tracking-api/get-a-shipment-status/) from **[TrackShip](https://trackship.com/)**
+3. [Get Result](https://www.trackingmore.com/v3/api-index.html?language=Golang#get-results) from **[TackingMore](https://www.trackingmore.com/)**
+
+
+## Implementation
+
 ### 1. Project Setup
 * Using NodeJS express framework
   * Create a folder for the project and go to the project folder
@@ -16,8 +27,6 @@
 * Create .env file to store variables
 
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/f71c2a82-a9ac-45cf-8944-b9169198a72b)
-
-![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/c4cefe9a-9383-4e0e-89fd-5437e198a598)
 
 
 ### 2. Environmental Variables
@@ -81,14 +90,14 @@ With the data posted in previous section, create a method to save the data to da
 
 <br>
 
-### TrackShip API
+* **TrackShip API**
 
-* **Request Parameters:**
+ * Request Parameters:
   
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/9f8ce0b4-5485-4391-ac07-8216e75343a1)
 
 
-* **Response Body:**
+ * Response Body:
   
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/6e190a26-6590-4000-b062-a468a64c6967)
 
@@ -97,27 +106,33 @@ or
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/5f780f3a-6b94-4cf7-97cd-260a6979da8d)
 
 
-* **Response Parameters:**
+ * Response Parameters:
 
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/910b9642-f9b8-4512-b91d-ec2e4ed89124)
 
 
-* **API URL:**
+ * API URL:
 
 [https://my.trackship.com/api/create-tracker/customapp/]{https://my.trackship.com/api/create-tracker/customapp/}
 
-### TrackingMore API
-* **Request**
+* **TrackingMore API**
+ * Request
+
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/e5033d75-4c39-4a70-9167-8dec13540ef0)
 
  
-* **Example**
+ * Example
+
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/62556c2e-5b06-4352-8558-bee230804adf)
 
-* **Response**
+ * Response
+
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/89ea2623-d04d-4177-8c82-a2c408ac1fc2)
 
+<br>
+
 ## Run Project
+
 * **package.json**
 
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/f6c9208c-b2cf-4a3d-9479-562870e0ce80)
