@@ -173,8 +173,8 @@ Testing the project using Postman.
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/a4489961-591d-4ddf-b04a-c042d31cad06)
 
   * TackingMore API
- 
-![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/4edcdf47-9d9c-4547-8414-6bb2254d2c0a)
+
+ ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/0aa8dbd2-e27d-48b2-aa43-7707e7f2be14)
 
 ### logger
 
@@ -184,8 +184,7 @@ Testing the project using Postman.
 
 * TackingMore API
 
-![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/0aa8dbd2-e27d-48b2-aa43-7707e7f2be14)
-
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/3dcdbf9f-d242-42ff-befa-8b556319b081)
 
 
 ### Trackship Preview
