@@ -1,11 +1,11 @@
 import express from 'express';
-import getShipmentStatus from '../utils/getShipmentStatus.js'; // Update the path as needed
+import getShipmentStatus from '../utils/trackmore.js'; // Update the path as needed
 import { getLoggerInstance } from "../logger.js";   
 const loggers = getLoggerInstance();
 
 export const getDetails = express.Router();
 
-getDetails.get('/shipment-status/:orderId', async (req, res) => {
+getDetails.get('/getTracking/:orderId', async (req, res) => {
     const orderId = req.params.orderId;
     loggers.info(`orderId: ${orderId}`);
     const status = await getShipmentStatus(orderId);

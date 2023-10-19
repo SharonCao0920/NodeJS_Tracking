@@ -1,12 +1,11 @@
 import fs from 'fs';
-import fetch from 'node-fetch';
 import { getLoggerInstance } from "../logger.js";   
+import axios from 'axios';
 const loggers = getLoggerInstance();
 
 const filePath = 'data.json'; 
-const API_URL = 'https://my.trackship.com/api/shipment/get/';
-const API_KEY = process.env.API_KEY; // Using environment variables for security
-const APP_NAME = process.env.APP_NAME_SHIPMENT;
+const API_URL = 'https://api.trackingmore.com/v3/trackings/get?tracking_numbers='
+
 
 const loadDataFromFile = () => {
     if (fs.existsSync(filePath)) {
@@ -42,20 +41,17 @@ const getShipmentStatus = async (orderId) => {
     loggers.info(`tracking_provider: ${tracking_provider}`);
 
     try {
-        const response = await fetch(API_URL, {
-            method: 'POST',
+        loggers.info(`API_URL: ${API_URL+tracking_number}`);
+        const API_KEY = process.env.TRACKMORE_API_KEY; // Using environment variables for security
+        const response = await axios.get(API_URL+tracking_number, {
             headers: {
-                'trackship-api-key': API_KEY,
-                'app-name': APP_NAME,
-            },
-            body: JSON.stringify({
-                tracking_number,
-                tracking_provider
-            })
+                'Tracking-Api-Key': API_KEY,
+                'Content-Type': 'application/json'
+            }
         });
 
-        const result = await response.json();
-        return result;
+        loggers.info(`response: ${response.status}`);
+        return response.data;
 
     } catch (error) {
         loggers.error(`Error fetching shipment status: ${error}`);

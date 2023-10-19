@@ -1,7 +1,8 @@
 import express from 'express';
 import * as dotenv from 'dotenv';
-import { getTracker } from './routers/getTracking.js';
-import { getDetails } from './routers/getDetails.js';
+import { getTracker } from './routers/createTracking.js';
+import { getDetails } from './routers/getTrackmore.js';
+import { getTrackShiping } from './routers/getTrackship.js';
 import https from 'https';
 import fs from 'fs';
 import { getLoggerInstance } from './logger.js';    
@@ -25,6 +26,7 @@ app.use(express.json());
 // Use the tracking router for all routes prefixed with /api
 app.use('/api', getTracker);
 app.use('/api', getDetails);
+app.use('/api', getTrackShiping);
 
 server.listen(PORT, () => {
     loggers.info(`Server is running on port ${PORT}`);
