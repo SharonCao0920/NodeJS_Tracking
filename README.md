@@ -86,22 +86,22 @@ With the data posted in previous section, create a method to save the data to da
 
 
 ### 3. Get Tracking Details
-1). API tested in this section is:
+* API tested in this section is:
   1.  [Get a shipment status](https://docs.trackship.com/docs/tracking-api/get-a-shipment-status/) from **[TrackShip](https://trackship.com/)**
   
-2).  In this section, the program will do:
+* In this section, the program will do:
 
    * use the order_id parsed from the URL to filter throught data.json file to get the tracking number and provider for the specific order_id.
    * Use the tracking number and provider information as parameters to call the tracking API to get the shipment status.
 
 <br>
 
-* Request Parameters:
+  * Request Parameters:
   
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/860a8fed-8d2c-46ad-b55d-3fe9944abe1e)
 
 
-* Response Body:
+  * Response Body:
   
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/695fb22c-435e-4a83-9377-0d3dd5e8e9e5)
 
@@ -111,12 +111,12 @@ or
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/5f780f3a-6b94-4cf7-97cd-260a6979da8d)
 
 
-  * Response Parameters:
+    * Response Parameters:
 
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/2966db04-8784-4d5c-ab09-d09d1f484aa2)
 
 
-  * API URL:
+    * API URL:
 
 [https://my.trackship.com/api/create-tracker/customapp/]{https://my.trackship.com/api/create-tracker/customapp/}
 
@@ -129,18 +129,18 @@ In this section, we post the data through the API to create a tracker informatio
 
 <br>
 
-* **Request Parameters:**
+* Request Parameters:
 
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/9137b3af-5982-4639-8f96-cafc0cadacb7)
 
 
-* **Response Body:**
+* Response Body:
 
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/95634d9b-aff4-4e76-be76-274ead7e0dda)
 
 
 
-* **API URL:**
+* API URL:
 
 [https://my.trackship.com/api/create-tracker/customapp/](https://api.trackingmore.com/v3/trackings/create)
 
@@ -148,7 +148,7 @@ In this section, we post the data through the API to create a tracker informatio
 ### 2. Save Data
 With the data posted in previous section, create a method to save the data to data.json file which removes duplicate data and save data set in order of order_id.
 
-![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/d84cead4-10cc-4616-8b14-58480240afc1)
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/434dc07d-3a90-4bbf-bd15-c2d4a1fae603)
 
 
 ### 3. Get Tracking Details
