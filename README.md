@@ -111,7 +111,7 @@ or
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/5f780f3a-6b94-4cf7-97cd-260a6979da8d)
 
 
-    * Response Parameters:
+   * Response Parameters:
 
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/2966db04-8784-4d5c-ab09-d09d1f484aa2)
 
