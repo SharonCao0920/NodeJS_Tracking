@@ -31,13 +31,12 @@
 
 * Create .env file to store variables
 
-![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/00ad335c-f865-4e3e-aa7c-6c4833aeaa00)
-
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/0102310e-40e9-48de-bf1f-222a809906a5)
 
 ### 2. Environmental Variables
 Save TrackingMore API keys and TrackShip API Key in this folder. 
 
-![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/b83fb998-53c0-4802-b36f-9ff7eff3a92b)
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/00ad335c-f865-4e3e-aa7c-6c4833aeaa00)
 
 
 ## TrackShip
