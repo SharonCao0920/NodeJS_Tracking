@@ -118,7 +118,7 @@ or
 
    * API URL:
 
-[https://my.trackship.com/api/create-tracker/customapp/]{https://my.trackship.com/api/create-tracker/customapp/}
+[https://my.trackship.com/api/create-tracker/customapp/](https://my.trackship.com/api/create-tracker/customapp/)
 
 ## TrackingMore
 ### 1. Create a Tracker
