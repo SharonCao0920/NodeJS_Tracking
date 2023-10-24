@@ -86,22 +86,22 @@ With the data posted in previous section, create a method to save the data to da
 
 
 ### 3. Get Tracking Details
-* API tested in this section is:
+1). API tested in this section is:
   1.  [Get a shipment status](https://docs.trackship.com/docs/tracking-api/get-a-shipment-status/) from **[TrackShip](https://trackship.com/)**
   
-* In this section, the program will do:
+2).  In this section, the program will do:
 
-  1. use the order_id parsed from the URL to filter throught data.json file to get the tracking number and provider for the specific order_id.
-     
-  2. Use the tracking number and provider information as parameters to call the tracking API to get the shipment status.
+   * use the order_id parsed from the URL to filter throught data.json file to get the tracking number and provider for the specific order_id.
+   * Use the tracking number and provider information as parameters to call the tracking API to get the shipment status.
 
 <br>
-  * Request Parameters:
+
+* Request Parameters:
   
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/860a8fed-8d2c-46ad-b55d-3fe9944abe1e)
 
 
-  * Response Body:
+* Response Body:
   
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/695fb22c-435e-4a83-9377-0d3dd5e8e9e5)
 
