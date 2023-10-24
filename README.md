@@ -5,9 +5,14 @@
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/c4cefe9a-9383-4e0e-89fd-5437e198a598)
 
 **APIs used:**
+* **TrackingMore**
+  * [Create Trackings](https://www.trackingmore.com/v3/api-index.html?language=Nodejs#create-trackings) from **[TackingMore](https://www.trackingmore.com/)**
+  * [Get Result](https://www.trackingmore.com/v3/api-index.html?language=Golang#get-results) from **[TackingMore](https://www.trackingmore.com/)**.
+    
+* **TrackShip**
 1. [Create a Tracking](https://docs.trackship.com/docs/tracking-api/create-shipment/) from **[TrackShip](https://trackship.com/)**
 2. [Get a shipment status](https://docs.trackship.com/docs/tracking-api/get-a-shipment-status/) from **[TrackShip](https://trackship.com/)**
-3. [Get Result](https://www.trackingmore.com/v3/api-index.html?language=Golang#get-results) from **[TackingMore](https://www.trackingmore.com/)**
+
 
 
 ## Implementation
@@ -30,13 +35,14 @@
 
 
 ### 2. Environmental Variables
-Save Tracking API keys in this folder. API I used for this project is from: 
-[TrackShip](https://docs.trackship.com/docs/tracking-api/)
+Save TrackingMore API keys and TrackShip API Key in this folder. 
 
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/b83fb998-53c0-4802-b36f-9ff7eff3a92b)
 
 
-### 3. Create a Tracker
+## TrackShip
+
+### 1. Create a Tracker
 
 API used in this section is **[Create a Tracking](https://docs.trackship.com/docs/tracking-api/create-shipment/)**
 
@@ -74,17 +80,16 @@ In this section, we post the data through the API to create a tracker informatio
 https://my.trackship.com/api/create-tracker/customapp/
 
 
-### 4. Save Data
+### 2. Save Data
 With the data posted in previous section, create a method to save the data to data.json file which removes duplicate data and save data set in order of order_id.
 
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/d84cead4-10cc-4616-8b14-58480240afc1)
 
 
-### 5. Get Tracking Details
-* API tested in this section are:
+### 3. Get Tracking Details
+* API tested in this section is:
   1.  [Get a shipment status](https://docs.trackship.com/docs/tracking-api/get-a-shipment-status/) from **[TrackShip](https://trackship.com/)**
-  2.  [Get Result](https://www.trackingmore.com/v3/api-index.html?language=Golang#get-results) from **[TackingMore](https://www.trackingmore.com/)**
-
+  
 * In this section, the program will do:
 
   1. use the order_id parsed from the URL to filter throught data.json file to get the tracking number and provider for the specific order_id.
@@ -92,8 +97,6 @@ With the data posted in previous section, create a method to save the data to da
   2. Use the tracking number and provider information as parameters to call the tracking API to get the shipment status.
 
 <br>
-
-* **TrackShip API**
   * Request Parameters:
   
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/860a8fed-8d2c-46ad-b55d-3fe9944abe1e)
@@ -118,19 +121,60 @@ or
 
 [https://my.trackship.com/api/create-tracker/customapp/]{https://my.trackship.com/api/create-tracker/customapp/}
 
-* **TrackingMore API**
- * Request
+## TrackingMore
+### 1. Create a Tracker
 
-![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/b776a40d-07aa-4eed-90dd-57ffc8c87877)
+API used in this section is **[Create Trackings](https://www.trackingmore.com/v3/api-index.html?language=Nodejs#create-trackings)**
 
- 
- * Example
+In this section, we post the data through the API to create a tracker information.
 
-![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/9da64796-a136-4f00-a1dc-16a77630b68b)
+<br>
 
- * Response
+* **Request Parameters:**
+* 
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/9137b3af-5982-4639-8f96-cafc0cadacb7)
 
-![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/4cdaa959-18c3-4b00-966e-0daa5a2ab97f)
+
+* **Response Body:**
+
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/95634d9b-aff4-4e76-be76-274ead7e0dda)
+
+
+
+* **API URL:**
+
+[https://my.trackship.com/api/create-tracker/customapp/](https://api.trackingmore.com/v3/trackings/create)
+
+
+### 2. Save Data
+With the data posted in previous section, create a method to save the data to data.json file which removes duplicate data and save data set in order of order_id.
+
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/d84cead4-10cc-4616-8b14-58480240afc1)
+
+
+### 3. Get Tracking Details
+* API tested in this section is:
+  1. [Get Result](https://www.trackingmore.com/v3/api-index.html?language=Golang#get-results) from **[TackingMore](https://www.trackingmore.com/)**
+
+* In this section, the program will do:
+
+  1. use the order_id parsed from the URL to filter throught data.json file to get the tracking number and provider for the specific order_id.
+     
+  2. Use the tracking number and provider information as parameters to call the tracking API to get the shipment status.
+
+<br>
+  * Request Parameters:
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/862b87d4-738c-44f4-8b36-44d186565eca)
+
+
+  * Response Body:
+
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/7a1f7352-567f-43e7-849a-57ec6cf5312d)
+
+
+  * API URL:
+
+https://api.trackingmore.com/v3/trackings/get?tracking_numbers=
 
 
 <br>
@@ -156,6 +200,8 @@ $ ngrok http https://localhost:8080
 ## Test Results
 Testing the project using Postman.
 
+### TrackShip
+
 * **Create a Tracking:**
   
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/809d5071-3d42-47a1-aba6-20bd10650259)
@@ -168,13 +214,23 @@ Testing the project using Postman.
 
 * **Get Shipment Status:**
 
-  * TrackShip API
-
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/a4489961-591d-4ddf-b04a-c042d31cad06)
 
-  * TackingMore API
+### TackingMore API
 
- ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/0aa8dbd2-e27d-48b2-aa43-7707e7f2be14)
+* **Create a Tracking:**
+  
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/aca09082-fe16-4519-bbf6-83c0e0bb70b5)
+
+* **Data Saved:**
+
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/434dc07d-3a90-4bbf-bd15-c2d4a1fae603)
+
+
+* **Get Shipment Status:**
+
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/b6ff810f-a704-4ee8-b0a3-ef06e01a2cde)
+
 
 ### logger
 
@@ -184,7 +240,8 @@ Testing the project using Postman.
 
 * TackingMore API
 
-![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/3dcdbf9f-d242-42ff-befa-8b556319b081)
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/2158a2b7-d2a6-45ac-a9df-79b8020c338f)
+
 
 
 ### Trackship Preview
