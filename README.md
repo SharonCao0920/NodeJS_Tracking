@@ -131,7 +131,7 @@ In this section, we post the data through the API to create a tracker informatio
 <br>
 
 * **Request Parameters:**
-* 
+
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/9137b3af-5982-4639-8f96-cafc0cadacb7)
 
 
@@ -154,6 +154,7 @@ With the data posted in previous section, create a method to save the data to da
 
 ### 3. Get Tracking Details
 * API tested in this section is:
+
   1. [Get Result](https://www.trackingmore.com/v3/api-index.html?language=Golang#get-results) from **[TackingMore](https://www.trackingmore.com/)**
 
 * In this section, the program will do:
@@ -247,4 +248,9 @@ Testing the project using Postman.
 ### Trackship Preview
 
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/1e86590b-1748-41e6-9254-5a9746f57a7e)
+
+
+### TrackingMore Preview
+
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/616fd51e-bc1b-4fa5-861c-c7e77cf78d99)
 
