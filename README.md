@@ -31,7 +31,7 @@
 
 * Create .env file to store variables
 
-![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/f71c2a82-a9ac-45cf-8944-b9169198a72b)
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/00ad335c-f865-4e3e-aa7c-6c4833aeaa00)
 
 
 ### 2. Environmental Variables
