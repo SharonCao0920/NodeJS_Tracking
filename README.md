@@ -164,6 +164,7 @@ With the data posted in previous section, create a method to save the data to da
 
 <br>
   * Request Parameters:
+  
 ![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/862b87d4-738c-44f4-8b36-44d186565eca)
 
 
