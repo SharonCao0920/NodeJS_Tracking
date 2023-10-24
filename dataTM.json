@@ -1,0 +1,15 @@
+[
+    {
+        "tracking_number": "LX1234566678CN",
+        "courier_code": "cainiao",
+        "order_number": "1113",
+        "destination_code": "LV",
+        "logistics_channel": "4px channel",
+        "customer_name": "test",
+        "customer_email": "example@abc.com",
+        "customer_phone": "+1123456789",
+        "note": "check",
+        "title": "title",
+        "lang": "en"
+    }
+]

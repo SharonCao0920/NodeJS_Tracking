@@ -60,5 +60,6 @@
         "order_id": "1234",
         "postal_code": "",
         "destination_country": ""
-    }
+    },
+    {}
 ]

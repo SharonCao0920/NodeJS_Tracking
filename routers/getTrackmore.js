@@ -6,9 +6,9 @@ const loggers = getLoggerInstance();
 export const getDetails = express.Router();
 
 getDetails.get('/getTracking/:orderId', async (req, res) => {
-    const orderId = req.params.orderId;
-    loggers.info(`orderId: ${orderId}`);
-    const status = await getShipmentStatus(orderId);
+    const order_number = req.params.orderId;
+    loggers.info(`order_number${order_number}`);
+    const status = await getShipmentStatus(order_number);
 
     if (status) {
         loggers.info(`status: ${status.message}`); //log statuts to console

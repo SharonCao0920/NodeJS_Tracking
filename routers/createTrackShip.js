@@ -1,12 +1,12 @@
 import express from 'express';
-import { createTracking } from '../utils/getTracker.js';
-import { appendTrackingData } from '../utils/dataStore.js';
+import { createTracking } from '../utils/getTrackShip.js';
+import { appendTrackingData } from '../utils/dataStoreTS.js';
 import { getLoggerInstance } from "../logger.js";   
 const loggers = getLoggerInstance();
 
 export const getTracker = express.Router();
 
-getTracker.post('/create-tracker', async (req, res) => {
+getTracker.post('/create-trackShip', async (req, res) => {
     const { tracking_number, tracking_provider, order_id, postal_code, destination_country } = req.body;
 
     try {
