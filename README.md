@@ -10,8 +10,8 @@
   * [Get Result](https://www.trackingmore.com/v3/api-index.html?language=Golang#get-results) from **[TackingMore](https://www.trackingmore.com/)**.
     
 * **TrackShip**
-1. [Create a Tracking](https://docs.trackship.com/docs/tracking-api/create-shipment/) from **[TrackShip](https://trackship.com/)**
-2. [Get a shipment status](https://docs.trackship.com/docs/tracking-api/get-a-shipment-status/) from **[TrackShip](https://trackship.com/)**
+  * [Create a Tracking](https://docs.trackship.com/docs/tracking-api/create-shipment/) from **[TrackShip](https://trackship.com/)**
+  * [Get a shipment status](https://docs.trackship.com/docs/tracking-api/get-a-shipment-status/) from **[TrackShip](https://trackship.com/)**
 
 
 
