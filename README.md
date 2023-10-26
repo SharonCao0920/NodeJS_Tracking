@@ -2,7 +2,8 @@
 
 ## Design
 
-![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/c4cefe9a-9383-4e0e-89fd-5437e198a598)
+![image](https://github.com/SharonCao0920/NodeJS_Tracking/assets/54694766/eb6d8f00-5915-4db2-9175-7c70310d2270)
+
 
 **APIs used:**
 * **TrackingMore**
